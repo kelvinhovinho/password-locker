@@ -1,3 +1,6 @@
+import string
+import random
+import pyperclips
 class User:
     '''
     classs that generate new interface of user 
@@ -15,3 +18,12 @@ class User:
     save_user method saves new user objects to the user_list
     ''' 
     User.user_list.append(self)
+
+class credentials:
+    '''
+    class to create an account password and save the information
+    '''
+    credentials_list=[]
+    user_credentials_list=[]
+    @classmethod
+    def check_user(cls,user_name,password)
