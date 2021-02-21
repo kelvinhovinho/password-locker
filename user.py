@@ -4,7 +4,7 @@ from classes import User
 # from classes import Credentials
 
 
-def create_user(first_name, last_name, email, phone_number,username, password):
+def create_user(user_name, password):
     '''
     Function to create a new user account
     '''
@@ -12,12 +12,12 @@ def create_user(first_name, last_name, email, phone_number,username, password):
     return new_user
 
 
-# def create_credential(user_name, site_name, password):
-#     '''
-#     Function to create a new user account
-#     '''
-#     new_credential = Credentials(user_name, site_name, password)
-#     return new_credential
+def create_credential(user_name, site_name, password):
+    '''
+    Function to create a new user account
+    '''
+    new_credential = Credentials(user_name, site_name, password)
+    return new_credential
 
 
 # def save_user(user):
