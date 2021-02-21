@@ -8,7 +8,7 @@ def create_user(user_name, password):
     '''
     Function to create a new user account
     '''
-    new_user = User(first_name, last_name, phone_number,email, username, password)
+    new_user = User(username, password)
     return new_user
 
 
@@ -19,12 +19,11 @@ def create_credential(user_name, site_name, password):
     new_credential = Credentials(user_name, site_name, password)
     return new_credential
 
-
-# def save_user(user):
-#     '''
-#     Function to save a new user account
-#     '''
-#     User.save_user(user)
+def save_user(user):
+    '''
+    Function to save a new user account
+    '''
+    User.save_user(user)
 
 
 # def save_credentials(credential):
