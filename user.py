@@ -96,15 +96,15 @@ def main():
     
     guest_name = input("What is your name?")
     print(f"Hello {guest_name}, welcome to Password Locker:")
-#     print('\n')
-#     while True:
-#         print('\n')
-#         print(r"*"*30)
-#         print('\n')
-#         print("="*60)    
-#         print("Use these short codes to navigate through Password_Locker:\n ln to log in \n ca to create a new account. \n ex to exit")
-#         print("="*60) 
-#         print('\n')
+    print('\n')
+    while True:
+        print('\n')
+        print(r"*"*30)
+        print('\n')
+        print("="*60)    
+        print("Use these short codes to navigate through Password_Locker:\n ln to log in \n ca to create a new account. \n ex to exit")
+        print("="*60) 
+        print('\n')
 
 #         short_code = input().lower()
 #         if short_code == 'ca':
