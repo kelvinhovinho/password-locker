@@ -94,8 +94,8 @@ function()
 
 def main():
     
-#     guest_name = input("What is your name?")
-#     print(f"Hello {guest_name}, welcome to Password Locker:")
+    guest_name = input("What is your name?")
+    print(f"Hello {guest_name}, welcome to Password Locker:")
 #     print('\n')
 #     while True:
 #         print('\n')
