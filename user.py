@@ -70,11 +70,11 @@ def find_by_site_name( site_name):
 
 
 
-# def copy_credentials(site_name):
-#     '''
-#     A class method to enable us to copy credentials of a given site name.
-#     '''
-#     return Credentials.copy_credentials(site_name)
+def copy_credentials(site_name):
+    '''
+    A class method to enable us to copy credentials of a given site name.
+    '''
+    return Credentials.copy_credentials(site_name)
 
 # def function():
         
