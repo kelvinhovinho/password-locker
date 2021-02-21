@@ -26,19 +26,19 @@ def save_user(user):
     User.save_user(user)
 
 
-# def save_credentials(credential):
-#     '''
-#     Function to save a new user account
-#     '''
-#     Credentials.save_credentials(credential)
+def save_credentials(credential):
+    '''
+    Function to save a new user account
+    '''
+    Credentials.save_credentials(credential)
 
 
-# def verify_user(username, password):
-#     '''
-#     Function that verifies the existance of the user before creating credentials
-#     '''
-#     checking_user = Credentials.check_user(username, password)
-#     return checking_user
+def verify_user(username, password):
+    '''
+    Function that verifies the existance of the user before creating credentials
+    '''
+    checking_user = Credentials.check_user(username, password)
+    return checking_user
 
 
 # def rand_pass(size):
