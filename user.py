@@ -41,18 +41,18 @@ def verify_user(username, password):
     return checking_user
 
 
-# def rand_pass(size):
-#     '''
-#     A funtion to generate password, combining random letters and digits
-#     '''
-#     return Credentials.rand_pass(size)
+def rand_pass(size):
+    '''
+    A funtion to generate password, combining random letters and digits
+    '''
+    return Credentials.rand_pass(size)
    
    
-# def display_credentials(user_name):
-#     '''
-#     A class method that displays all credentials of a given username.
-#     '''
-#     return Credentials.display_credentials(user_name)
+def display_credentials(user_name):
+    '''
+    A class method that displays all credentials of a given username.
+    '''
+    return Credentials.display_credentials(user_name)
 
 # def delete_credential(credentials):
 #     """
