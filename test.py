@@ -5,14 +5,13 @@ import pyperclip
 
 class TestUser(unittest.TestCase):
     def setUp(self):
-        self.new_user = User('Titus', 'Opiyo', '0705413505','titusouko@gmail.com','costamay', '1234')
+        self.new_user=User('Kelvin', 'Adamba', '0714101094','kelvinadamba@hotmail.com', '1234')
 
     def test__init__(self):
-        self.assertEqual(self.new_user.first_name, 'Titus')
-        self.assertEqual(self.new_user.last_name, 'Opiyo')
-        self.assertEqual(self.new_user.phone_number, '0705413505')
-        self.assertEqual(self.new_user.email, 'titusouko@gmail.com')
-        self.assertEqual(self.new_user.username, 'costamay')
+        self.assertEqual(self.new_user.first_name, 'kelvin')
+        self.assertEqual(self.new_user.last_name, 'adamba')
+        self.assertEqual(self.new_user.phone_number, '0714101094')
+        self.assertEqual(self.new_user.email, 'kelvinadamba@hotmail.com')
         self.assertEqual(self.new_user.password, '1234')
 
     def tearDown(self):
@@ -25,7 +24,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User('Titus', 'Opiyo', '0727719206','titusouko@gmail.com','costamay', '1234')
+        test_user = User('Kelvin', 'Adamba', '0727719206','kelvinadamba@hotmail.com', '1234')
         test_user.save_user()
         self.assertEqual(len(User.users_list), 2)
 
@@ -35,7 +34,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User('Titus', 'Opiyo', '0727719206','titusouko@gmail.com','costamay', '1234')
+        test_user = User('Kelvin', 'Adamba', '0727719206','kelvinadamba@hotmail.com', '1234')
         test_user.save_user()
 
         test_user.delete_user()
@@ -45,10 +44,10 @@ class TestUser(unittest.TestCase):
 class TestCredential(unittest.TestCase):
     def setUp(self):
         self.new_credential = Credentials(
-            'Titus', 'twitter', '12345')
+            'kelvin', 'twitter', '12345')
 
     def test__init__(self):
-        self.assertEqual(self.new_credential.user_name, 'Titus')
+        self.assertEqual(self.new_credential.user_name, 'kelvin')
         self.assertEqual(self.new_credential.site_name, 'twitter')
         self.assertEqual(self.new_credential.password, '12345')
 
@@ -86,7 +85,7 @@ class TestCredential(unittest.TestCase):
         A funtcion to test to check if the copy a credential method copies the correct credential
         '''
         self.new_credential.save_credentials()
-        twitter = Credentials('Titus', 'twitter', '12345')
+        twitter = Credentials('kelvin', 'twitter', '12345')
         twitter.save_credentials()
         found_credential = None
         for credential in Credentials.credential_list:
