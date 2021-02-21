@@ -8,7 +8,6 @@ class User:
 
     user_list=[]
 
-# constructor method
     def _init_(self,user_name,password):
         self,user_name=user_name
         self,password=password
@@ -18,6 +17,11 @@ class User:
     save_user method saves new user objects to the user_list
     ''' 
     User.user_list.append(self)
+
+    def delete_user(self):
+        '''
+        function to delete user information
+        '''
 
 class credentials:
     '''
