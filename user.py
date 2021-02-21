@@ -106,10 +106,10 @@ def main():
         print("="*60) 
         print('\n')
 
-#         short_code = input().lower()
-#         if short_code == 'ca':
-#             print("New Account")
-#             print("-"*10)
+        short_code = input().lower()
+        if short_code == 'ca':
+            print("New Account")
+            print("-"*10)
 
 #             print("Enter First Name ...")
 #             first_name = input()
