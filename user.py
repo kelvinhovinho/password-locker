@@ -54,19 +54,19 @@ def display_credentials(user_name):
     '''
     return Credentials.display_credentials(user_name)
 
-# def delete_credential(credentials):
-#     """
-#     Function to delete a Credentials from credentials list
-#     """
-#     credentials.delete_credentials()    
+def delete_credential(credentials):
+    """
+    Function to delete a Credentials from credentials list
+    """
+    credentials.delete_credentials()    
 
 
 
-# def find_by_site_name( site_name):
-#     '''
-#     A function to search for credentials when given an account site search as google, or twitter.
-#     '''
-#     return Credentials.find_by_site_name(site_name)
+def find_by_site_name( site_name):
+    '''
+    A function to search for credentials when given an account site search as google, or twitter.
+    '''
+    return Credentials.find_by_site_name(site_name)
 
 
 
