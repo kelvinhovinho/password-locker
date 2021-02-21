@@ -92,7 +92,7 @@ U  \ V  V /  U|_____|  |_____|  \____|\_)-\___/  |_|  |_|  |_____|
         ''')
 function()    
 
-# def main():
+def main():
     
 #     guest_name = input("What is your name?")
 #     print(f"Hello {guest_name}, welcome to Password Locker:")
@@ -280,5 +280,5 @@ function()
 
 # print('\n')
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
