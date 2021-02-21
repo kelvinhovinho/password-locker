@@ -1,15 +1,15 @@
 #!/usr/bin/env python3.6
 import pyperclip
 from classes import User
-from classes import Credentials
+# from classes import Credentials
 
 
-# def create_user(first_name, last_name, email, phone_number,username, password):
-#     '''
-#     Function to create a new user account
-#     '''
-#     new_user = User(first_name, last_name, phone_number,email, username, password)
-#     return new_user
+def create_user(first_name, last_name, email, phone_number,username, password):
+    '''
+    Function to create a new user account
+    '''
+    new_user = User(first_name, last_name, phone_number,email, username, password)
+    return new_user
 
 
 # def create_credential(user_name, site_name, password):
